@@ -1,0 +1,156 @@
+:root{
+  --primary-color: #f3f3f3f3;
+  --main-bg-color: #1A1B21;
+  --body-bg-color: #23252C;
+  --blue-color: #5093E2;
+  --secondary-color: #1E1F26;
+  --tertiary-color: #F3BF99;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--primary-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--body-bg-color);
+
+
+}
+
+#root {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+
+}
+
+header{
+  background-color: var(--main-bg-color);
+  max-width: fit-content;
+  margin: 0 auto;
+  width: 30rem;
+}
+
+.portrait{
+  border-radius: 10px 10px 0 0;
+  width: 30rem;
+}
+
+.heder-section h1{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.heder-section h2{
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--tertiary-color);
+  font-weight: 400;
+}
+
+.github-link h3{
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: center;
+  gap: 0.225rem;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+
+.header-btn{
+  margin: 0.725rem;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  display:flex;              
+  align-items: center;        
+  gap: 0.5rem;                 
+  font-size: 1rem;      
+  flex-direction: row;    
+}
+
+.header-btn:hover{
+  cursor: pointer;
+}
+
+.mail-btn{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.linkedin-btn{
+  background-color: var(--blue-color);
+  border: none;
+}
+
+main{
+  background-color: var(--main-bg-color);
+  margin: -1rem auto;
+  width: 30rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+main h4{
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+main section{
+  padding: 0.2rem 7rem;
+  text-align: left;
+}
+
+main section {
+  font-size: 0.7rem;
+}
+
+footer{
+  background-color: #161619;
+  margin: -1rem auto;
+  width: 30rem;
+  padding-block: 1rem;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer nav a{
+  display: flex;
+  background-color: #918E9B;
+  padding: 0.2rem;
+  align-items: center;
+  color: #161619;
+  border-radius: 5px;
+}
