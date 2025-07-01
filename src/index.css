@@ -20,6 +20,7 @@
 }
 
 a {
+  display: inline-block;
   text-decoration: inherit;
 }
 
@@ -27,15 +28,13 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  max-width: 100vw;
   background-color: var(--body-bg-color);
-
-
 }
 
 #root {
-  max-width: 80rem;
+  max-width: 80vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -47,12 +46,12 @@ header{
   background-color: var(--main-bg-color);
   max-width: fit-content;
   margin: 0 auto;
-  width: 30rem;
+  max-width: 30rem;
 }
 
 .portrait{
   border-radius: 10px 10px 0 0;
-  width: 30rem;
+  width: 100%;
 }
 
 .heder-section h1{
@@ -68,11 +67,12 @@ header{
   font-weight: 400;
 }
 
-.github-link h3{
+.github-link > h3{
   color: var(--primary-color);
   font-size: 0.8rem;
   font-weight: 200;
-  margin-top: 0;
+  margin: 0 auto;
+  max-width: max-content;
 }
 
 .header-navbar {
@@ -113,7 +113,7 @@ header{
 main{
   background-color: var(--main-bg-color);
   margin: -1rem auto;
-  width: 30rem;
+  max-width: 30rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -136,7 +136,7 @@ main section {
 footer{
   background-color: #161619;
   margin: -1rem auto;
-  width: 30rem;
+  max-width: 30rem;
   padding-block: 1rem;
 }
 
